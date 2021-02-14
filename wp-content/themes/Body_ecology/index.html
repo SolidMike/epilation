@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Title</title>
+    <meta name="description" content="Description"/>
+    <meta name="keywords" content="Keywords"/>
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="css/libs.min.css"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <script>
+      function fixIE(url) {
+          var headID = document.getElementsByTagName('head')[0];
+          var link = document.createElement('link');
+          link.type = 'text/css';
+          link.rel = 'stylesheet';
+          headID.appendChild(link);
+          link.href = url + '/fix-ie.css';
+      };
+      function checkIE() {
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf("MSIE ");
+        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
+        {
+          //- alert('Fucking IE!!!');
+          fixIE('css'); // Ссылка на файл стилей fix-ie.css
+        }
+        else  // If another browser, return 0
+        {
+          //- alert('Other Browser');
+        }
+        return false;
+      }
+      checkIE();
+    </script>
+  </head>
+  <body id="top">
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="header__logo col"><a class="logo" href="#top"><img src="img/logo.png" alt=""/></a></div>
+          <div class="header__social hidden_md col">
+            <div class="social"><a href="#" target="_blank" rel="noopener nofollow"><img src="img/icons/icon_fb.png" alt=""/></a><a href="#" target="_blank" rel="noopener nofollow"><img src="img/icons/icon_vk.png" alt=""/></a><a href="#" target="_blank" rel="noopener nofollow"><img src="img/icons/icon_instagram.png" alt=""/></a><a href="#" target="_blank" rel="noopener nofollow"><img src="img/icons/icon_ok.png" alt=""/></a><a href="#" target="_blank" rel="noopener nofollow"><img src="img/icons/icon_youtube.png" alt=""/></a></div>
+          </div>
+          <nav class="nav nav-bar col" id="nav-bar">
+            <div class="header__social visible_md col">
+              <div class="social"><a href="#" target="_blank" rel="noopener nofollow"><img src="img/icons/icon_fb.png" alt=""/></a><a href="#" target="_blank" rel="noopener nofollow"><img src="img/icons/icon_vk.png" alt=""/></a><a href="#" target="_blank" rel="noopener nofollow"><img src="img/icons/icon_instagram.png" alt=""/></a><a href="#" target="_blank" rel="noopener nofollow"><img src="img/icons/icon_ok.png" alt=""/></a><a href="#" target="_blank" rel="noopener nofollow"><img src="img/icons/icon_youtube.png" alt=""/></a></div>
+            </div>
+            <div class="header__links visible_sm col"><a class="button button_gradient" href="#" target="_blank" rel="noopener nofollow"><span class="button__gradient"></span><span class="button__text">Информация о франшизе</span></a></div>
+            <div class="header__call visible_xs col"><a href="tel:+79287077008">+7(928) <b>70-77-008</b></a><a class="button" href="#modal" data-toggle="modal"><span class="button__gradient"></span><span class="button__text">Обратный звонок</span></a></div>
+          </nav>
+          <div class="header__links hidden_sm col"><a class="button button_gradient" href="#" target="_blank" rel="noopener nofollow"><span class="button__gradient"></span><span class="button__text">Информация о франшизе</span></a></div>
+          <div class="header__call hidden_xs col"><a href="tel:+79287077008">+7(928) <b>70-77-008</b></a><a class="button" href="#modal" data-toggle="modal"><span class="button__gradient"></span><span class="button__text">Обратный звонок</span></a></div>
+          <button class="nav-toggle" type="button" data-toggle="nav" data-target="#nav-bar"><span class="_top"></span><span class="_mid"></span><span class="_bot"></span></button>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="screen section-main">
+        <div class="screen__bg section-main__bg"></div>
+        <div class="screen__overlay section-main__overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="main__left col">
+              <h1 class="title text_uppercase" data-aos="fade-down"><span>ЛАЗЕРНАЯ ЭПИЛЯЦИЯ</span> НОВОГО ПОКОЛЕНИЯ</h1>
+              <div class="description" data-aos="fade-right" data-aos-delay="150">Избавьтесь навсегда от нежелательных волос!</div><a class="button" href="#modal-consult" data-toggle="modal" data-aos="fade-up" data-aos-delay="300"><span class="button__gradient"></span><span class="button__text">Бесплатная консультация косметолога</span></a>
+            </div>
+            <div class="main__right col">
+              <div class="main-advantage" data-aos="">
+                <div class="main-advantage__item">
+                  <div class="main-advantage__image"><img src="img/content/main-advantage__image_1.png" alt=""/></div>
+                  <div class="main-advantage__descr">Без ожогов</div>
+                </div>
+                <div class="main-advantage__item">
+                  <div class="main-advantage__image"><img src="img/content/main-advantage__image_2.png" alt=""/></div>
+                  <div class="main-advantage__descr">Без вросших волосков</div>
+                </div>
+                <div class="main-advantage__item">
+                  <div class="main-advantage__image"><img src="img/content/main-advantage__image_3.png" alt=""/></div>
+                  <div class="main-advantage__descr">Без боли</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-device" data-aos="fade-left" data-aos-delay="500"><img class="main-device__image" src="img/laser-device.png" alt="Лазерный аппарат"/></div>
+        </div>
+        <div class="scroll-down"><img src="img/scroll-down.png" alt=""/></div>
+      </div>
+      <div class="screen section-what-is">
+        <div class="container">
+          <div class="row">
+            <div class="title title_lg text_uppercase text_center col" data-aos="fade-up">ЧТО ТАКОЕ <span>ЛАЗЕРНАЯ ЭПИЛЯЦИЯ</span></div>
+            <div class="content text_center col" data-aos="fade-up" data-aos-delay="150">
+              <p>На сегодняшний день, это самый эффективный способ удаления волос на всех участках тела</p>
+              <p>Во время процедуры врач-косметолог быстро и безболезненно обрабатывает кожу вспышками лазера.</p>
+              <p>&nbsp;</p>
+              <p>Ни один другой метод не дает такой же продолжительный и устойчивый эффект.</p>
+            </div>
+            <div class="what-is-list" data-aos="">
+              <div class="what-is-list__item">
+                <div class="what-is-list__item-descr">
+                  <div class="title title_sm">До процедуры</div>
+                </div>
+                <div class="what-is-list__item-image gradient-circle">
+                  <div class="gradient-circle__animation gradient-circle__animation_1"></div>
+                  <div class="gradient-circle__animation gradient-circle__animation_2"></div><img src="img/content/what-is_1.png" alt=""/>
+                </div>
+              </div>
+              <div class="what-is-list__item">
+                <div class="what-is-list__item-descr">
+                  <div class="title title_sm">Вспышка лазера</div>
+                  <div class="descr">Меланин поглощает красный свет диодного лазера и нагревается</div>
+                </div>
+                <div class="what-is-list__item-image gradient-circle">
+                  <div class="gradient-circle__animation gradient-circle__animation_1"></div>
+                  <div class="gradient-circle__animation gradient-circle__animation_2"></div><img src="img/content/what-is_2.png" alt=""/>
+                </div>
+              </div>
+              <div class="what-is-list__item">
+                <div class="what-is-list__item-descr">
+                  <div class="title title_sm">После процедуры</div>
+                </div>
+                <div class="what-is-list__item-image gradient-circle">
+                  <div class="gradient-circle__animation gradient-circle__animation_1"></div>
+                  <div class="gradient-circle__animation gradient-circle__animation_2"></div><img src="img/content/what-is_3.png" alt=""/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen section-advantage">
+        <div class="screen__bg section-advantage__bg"></div>
+        <div class="screen__overlay section-advantage__overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="advantage" data-aos="">
+              <div class="advantage__item">
+                <div class="advantage__item-image"><img src="img/content/advantage__item-image_1.png" alt=""/></div>
+                <div class="advantage__item-descr">
+                  <div class="title title_sm">Не больно</div>
+                  <div class="descr">Вы почувствуете только легкое покалывание благодаря специально разработанной системе охлаждения</div>
+                </div>
+              </div>
+              <div class="advantage__item">
+                <div class="advantage__item-image"><img src="img/content/advantage__item-image_2.png" alt=""/></div>
+                <div class="advantage__item-descr">
+                  <div class="title title_sm">Безопасно</div>
+                  <div class="descr">Лазерный луч действует только на волосяной фолликул и совершенно безопасен для остальных участков кожи</div>
+                </div>
+              </div>
+              <div class="advantage__item">
+                <div class="advantage__item-image"><img src="img/content/advantage__item-image_3.png" alt=""/></div>
+                <div class="advantage__item-descr">
+                  <div class="title title_sm">Долгий эффект</div>
+                  <div class="descr">После полного курса лазерной эпиляции вы сможете забыть об удалении волос как минимум на несколько лет</div>
+                </div>
+              </div>
+              <div class="advantage__item">
+                <div class="advantage__item-image"><img src="img/content/advantage__item-image_4.png" alt=""/></div>
+                <div class="advantage__item-descr">
+                  <div class="title title_sm">Экономично</div>
+                  <div class="descr">Сэкономьте более 80% денег, которые пришлось бы потратить на регулярное удаление волос другими методами</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen section-economy">
+        <div class="container">
+          <div class="row">
+            <div class="title title_lg text_uppercase text_center col" data-aos="fade-up">РЕАЛЬНАЯ ЭКОНОМИЯ</div>
+            <div class="content text_center col" data-aos="fade-up" data-aos-delay="150">
+              <p>Мы рассчитали для вас затраты времени и денег на депиляцию разными способами на протяжении активного периода жизни от 18 до 50 лет</p>
+            </div>
+            <div class="economy-list" data-aos="">
+              <div class="economy-list__item">
+                <div class="economy-list__item-image"><img src="img/content/economy_1.jpg" alt=""/></div>
+                <div class="title title_sm">Воск</div>
+                <div class="descr">Вы потратите:</div>
+                <div class="numbers">
+                  <div class="numbers__item">
+                    <div class="numbers__item-image"><img src="img/icons/icon_numbers_1.png" alt=""/></div>
+                    <div class="numbers__item-numb"><span>805700 &#8399;</span></div>
+                  </div>
+                  <div class="numbers__item">
+                    <div class="numbers__item-image"><img src="img/icons/icon_numbers_2.png" alt=""/></div>
+                    <div class="numbers__item-numb"><span>256 часов</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="economy-list__item">
+                <div class="economy-list__item-image"><img src="img/content/economy_2.jpg" alt=""/></div>
+                <div class="title title_sm">Бритва</div>
+                <div class="descr">Вы потратите:</div>
+                <div class="numbers">
+                  <div class="numbers__item">
+                    <div class="numbers__item-image"><img src="img/icons/icon_numbers_1.png" alt=""/></div>
+                    <div class="numbers__item-numb"><span>108500 &#8399;</span></div>
+                  </div>
+                  <div class="numbers__item">
+                    <div class="numbers__item-image"><img src="img/icons/icon_numbers_2.png" alt=""/></div>
+                    <div class="numbers__item-numb"><span>448 часов</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="economy-list__item">
+                <div class="economy-list__item-image"><img src="img/content/economy_3.jpg" alt=""/></div>
+                <div class="title title_sm">Лазерная эпиляция</div>
+                <div class="descr">Вы потратите:</div>
+                <div class="numbers">
+                  <div class="numbers__item">
+                    <div class="numbers__item-image"><img src="img/icons/icon_numbers_1.png" alt=""/></div>
+                    <div class="numbers__item-numb"><span>49100 &#8399;/курс</span></div>
+                  </div>
+                  <div class="numbers__item">
+                    <div class="numbers__item-image"><img src="img/icons/icon_numbers_2.png" alt=""/></div>
+                    <div class="numbers__item-numb"><span>20 часов</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen section-revolution">
+        <div class="screen__bg section-revolution__bg"></div>
+        <div class="screen__overlay section-revolution__overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="title title_lg text_uppercase text_center col" data-aos="fade-up">РЕВОЛЮЦИЯ В ОБЛАСТИ <span>ЭПИЛЯЦИИ</span></div>
+            <div class="revolution-content col" data-aos="fade-right" data-aos-delay="300">
+              <div class="content">
+                <p>Для работы мы используем высокоэффективное оборудование последнего поколения из Израиля.</p>
+                <p>&nbsp;</p>
+                <p>Это профессиональный аппарат <b>Diode Laser Z54</b> компании Impuls Medical.</p>
+                <p>&nbsp;</p>
+                <p>В процессе работы он одновременно подает на кожу трехволновой импульс 755нм/808 нм/1064нм.</p>
+                <p>&nbsp;</p>
+                <p>Такой принцип действия позволяет быстро и эффективно разрушать волосяные  фолликулы, которые находятся на разной глубине.</p>
+                <p>&nbsp;</p>
+                <p>Встроенная специальная система исключает перегрев кожи и предохраняет ее от ожогов.</p>
+                <p>&nbsp;</p>
+                <p>Все аппараты имеют самостоятельную систему дезинфекции, а головка лазера дополнительно обрабатывается врачом перед каждой процедурой.</p>
+              </div>
+            </div>
+            <div class="revolution-image col" data-aos="zoom-out" data-aos-delay="150">
+              <div class="revolution-image__img gradient-circle">
+                <div class="gradient-circle__animation gradient-circle__animation_1"></div>
+                <div class="gradient-circle__animation gradient-circle__animation_2"></div><img src="img/content/Diode-Laser-Z54.png" alt="Diode Laser Z54"/>
+              </div>
+            </div>
+            <div class="revolution-list col" data-aos="fade-left" data-aos-delay="300">
+              <div class="revolution-list__item">
+                <div class="revolution-list__item-title">Быстро</div>
+                <div class="revolution-list__item-descr">Один сеанс занимает всего от 10 до 45 мин</div>
+              </div>
+              <div class="revolution-list__item">
+                <div class="revolution-list__item-title">Широкий охват</div>
+                <div class="revolution-list__item-descr">Захватывает большую площадь, за счет чего можно обработать сразу несколько зон</div>
+              </div>
+              <div class="revolution-list__item">
+                <div class="revolution-list__item-title">Комфортные ощущения</div>
+                <div class="revolution-list__item-descr">Благодаря охлаждающему эффекту, процедура проходит безболезненно</div>
+              </div>
+              <div class="revolution-list__item">
+                <div class="revolution-list__item-title">Для любой кожи</div>
+                <div class="revolution-list__item-descr">Подойдет для всех типов и оттеноков кожи, а также для любого цвета волос</div>
+              </div>
+              <div class="revolution-list__item">
+                <div class="revolution-list__item-title">Без повреждений</div>
+                <div class="revolution-list__item-descr">Не перегревает кожу и не оставляет на ней раздражений, ожогов и рубцов</div>
+              </div>
+              <div class="revolution-list__item">
+                <div class="revolution-list__item-title">Нет ограничений</div>
+                <div class="revolution-list__item-descr">Можно вести привычный образ жизни: загорать, купаться, заниматься спортом</div>
+              </div>
+            </div>
+            <div class="video-presentation col">
+              <div class="title title_lg text_uppercase text_center" data-aos="fade-up">ПОСМОТРИТЕ ВИДЕОПРЕЗЕНТАЦИЮ</div>
+              <div class="video-block" data-aos="fade-up">
+                <div class="embed-responsive" data-video="xaEsni-OgUs" data-poster="img/content/video-poster.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen section-individual">
+        <div class="container">
+          <div class="row">
+            <div class="title title_lg text_uppercase text_center col" data-aos="fade-up"><span>ИНДИВИДУАЛЬНАЯ ПРОГРАММА</span> ДЛЯ КАЖДОГО</div>
+            <div class="content text_center col" data-aos="fade-up" data-aos-delay="150">
+              <p>Забудьте НАВСЕГДА про болезненную депиляцию и бритье по утрам!</p>
+            </div>
+            <div class="individual-list col" data-aos="">
+              <div class="individual-list__item">
+                <div class="individual-list__item-image" data-idx="1"><img src="img/content/individual-list__item-image_1.png" alt=""/></div>
+                <div class="individual-list__item-descr">
+                  <div class="individual-list__item-title title title_sm">Запишитесь на консультацию</div>
+                  <div class="individual-list__item-content">
+                    <p>Опытный врач произведет диагностику и назначит количество процедур.</p>
+                    <p>&nbsp;</p>
+                    <p>Расписание процедур составляется индивидуально, с учетом тона кожи, цвета волос, толщины волосков.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="individual-list__item">
+                <div class="individual-list__item-image" data-idx="2"><img src="img/content/individual-list__item-image_2.png" alt=""/></div>
+                <div class="individual-list__item-descr">
+                  <div class="individual-list__item-title title title_sm">Пройдите курс лазерной эпиляции</div>
+                  <div class="individual-list__item-content">
+                    <p>Специалист тщательно проработает диодным лазером каждый сантиметр выбранной зоны.</p>
+                    <p>&nbsp;</p>
+                    <p>Процедура проходит в абсолютно стерильном чистом помещении, используются только одноразовые материалы.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="individual-list__item">
+                <div class="individual-list__item-image" data-idx="3"><img src="img/content/individual-list__item-image_3.png" alt=""/></div>
+                <div class="individual-list__item-descr">
+                  <div class="individual-list__item-title title title_sm">Наслаждайтесь идеально гладкой кожей</div>
+                  <div class="individual-list__item-content">
+                    <p>После первого сеанса волос становится намного меньше - а значит эпиляцию можно делать реже.</p>
+                    <p>&nbsp;</p>
+                    <p>Устойчивый эффект наступае после 3-го сеанса.</p>
+                    <p>За 5+ сеансов волосы пропадают полностью.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="individual-image col" data-aos="fade-right" data-aos-delay="300">
+              <div class="individual-image__img gradient-circle">
+                <div class="gradient-circle__animation gradient-circle__animation_1"></div>
+                <div class="gradient-circle__animation gradient-circle__animation_2"></div><img src="img/content/girl.png" alt=""/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen section-specialist">
+        <div class="screen__bg section-specialist__bg"></div>
+        <div class="screen__overlay section-specialist__overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="title title_lg text_uppercase text_center col" data-aos="fade-up">НАШИ СПЕЦИАЛИСТЫ</div>
+            <div class="content text_center col" data-aos="fade-up" data-aos-delay="150">
+              <p>Процедуры проводят только врачи-косметологи с высшим образованием и опытом в области дерматологии не менее 5 лет</p>
+              <p>Все сотрудники регулярно проходят курс повышения квалификации в лучших израильских клиниках</p>
+            </div>
+            <div class="specialist" data-aos="fade-up" data-aos-delay="300">
+              <div class="specialist__item">
+                <div class="specialist__item-photo"><img src="img/content/specialist_1.jpg" alt=""/></div>
+                <div class="specialist__item-info">
+                  <div class="specialist__item-title title title_xs text_uppercase text_center">ТЕЛЕГИНА ТАТЬЯНА</div>
+                  <div class="specialist__item-post text_center">Врач-косметолог</div>
+                  <div class="specialist__item-experience text_center"><b>Опыт:</b> 6 лет</div>
+                  <div class="specialist__item-certificate"><a href="img/content/specialist-certificate_1-lg.jpg"><img src="img/content/specialist-certificate_1.jpg" alt=""/></a><a href="img/content/specialist-certificate_2-lg.jpg"><img src="img/content/specialist-certificate_2.jpg" alt=""/></a><a href="img/content/specialist-certificate_1-lg.jpg"><img src="img/content/specialist-certificate_1.jpg" alt=""/></a><a href="img/content/specialist-certificate_2-lg.jpg"><img src="img/content/specialist-certificate_2.jpg" alt=""/></a></div><a class="button button_white" href="#modal-order" data-toggle="modal"><span class="button__gradient"></span><span class="button__text">Записаться</span></a>
+                </div>
+              </div>
+              <div class="specialist__item">
+                <div class="specialist__item-photo"><img src="img/content/specialist_2.jpg" alt=""/></div>
+                <div class="specialist__item-info">
+                  <div class="specialist__item-title title title_xs text_uppercase text_center">ТЕЛЕГИНА ТАТЬЯНА</div>
+                  <div class="specialist__item-post text_center">Врач-косметолог</div>
+                  <div class="specialist__item-experience text_center"><b>Опыт:</b> 6 лет</div>
+                  <div class="specialist__item-certificate"><a href="img/content/specialist-certificate_2-lg.jpg"><img src="img/content/specialist-certificate_2.jpg" alt=""/></a><a href="img/content/specialist-certificate_1-lg.jpg"><img src="img/content/specialist-certificate_1.jpg" alt=""/></a><a href="img/content/specialist-certificate_2-lg.jpg"><img src="img/content/specialist-certificate_2.jpg" alt=""/></a><a href="img/content/specialist-certificate_1-lg.jpg"><img src="img/content/specialist-certificate_1.jpg" alt=""/></a></div><a class="button button_white" href="#modal-order" data-toggle="modal"><span class="button__gradient"></span><span class="button__text">Записаться</span></a>
+                </div>
+              </div>
+              <div class="specialist__item">
+                <div class="specialist__item-photo"><img src="img/content/specialist_1.jpg" alt=""/></div>
+                <div class="specialist__item-info">
+                  <div class="specialist__item-title title title_xs text_uppercase text_center">ТЕЛЕГИНА ТАТЬЯНА</div>
+                  <div class="specialist__item-post text_center">Врач-косметолог</div>
+                  <div class="specialist__item-experience text_center"><b>Опыт:</b> 6 лет</div>
+                  <div class="specialist__item-certificate"><a href="img/content/specialist-certificate_1-lg.jpg"><img src="img/content/specialist-certificate_1.jpg" alt=""/></a><a href="img/content/specialist-certificate_2-lg.jpg"><img src="img/content/specialist-certificate_2.jpg" alt=""/></a><a href="img/content/specialist-certificate_1-lg.jpg"><img src="img/content/specialist-certificate_1.jpg" alt=""/></a><a href="img/content/specialist-certificate_2-lg.jpg"><img src="img/content/specialist-certificate_2.jpg" alt=""/></a></div><a class="button button_white" href="#modal-order" data-toggle="modal"><span class="button__gradient"></span><span class="button__text">Записаться</span></a>
+                </div>
+              </div>
+              <div class="specialist__item">
+                <div class="specialist__item-photo"><img src="img/content/specialist_2.jpg" alt=""/></div>
+                <div class="specialist__item-info">
+                  <div class="specialist__item-title title title_xs text_uppercase text_center">ТЕЛЕГИНА ТАТЬЯНА</div>
+                  <div class="specialist__item-post text_center">Врач-косметолог</div>
+                  <div class="specialist__item-experience text_center"><b>Опыт:</b> 6 лет</div>
+                  <div class="specialist__item-certificate"><a href="img/content/specialist-certificate_2-lg.jpg"><img src="img/content/specialist-certificate_2.jpg" alt=""/></a><a href="img/content/specialist-certificate_1-lg.jpg"><img src="img/content/specialist-certificate_1.jpg" alt=""/></a><a href="img/content/specialist-certificate_2-lg.jpg"><img src="img/content/specialist-certificate_2.jpg" alt=""/></a><a href="img/content/specialist-certificate_1-lg.jpg"><img src="img/content/specialist-certificate_1.jpg" alt=""/></a></div><a class="button button_white" href="#modal-order" data-toggle="modal"><span class="button__gradient"></span><span class="button__text">Записаться</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen section-price">
+        <div class="container">
+          <div class="row">
+            <div class="title title_lg text_uppercase text_center col" data-aos="fade-up">СТОИМОСТЬ</div>
+            <div class="content text_center col" data-aos="fade-up" data-aos-delay="150">
+              <p>Выбирайте только то, что подходит именно вам</p>
+            </div>
+            <div class="price-block col" data-aos="">
+              <div class="price-block__item">
+                <div class="price-block__item-title title title_xs text_uppercase"><img src="img/icons/icon_female.png" alt=""/> Женская эпиляция</div>
+                <div class="price__row">
+                  <div class="price__row-info"><span>Всё тело</span> <span class="price">3000 &#8399;</span></div>
+                  <div class="price__row-button"><a class="button" href="#modal-order" data-toggle="modal"><span class="button__gradient"></span><span class="button__text">Записаться</span></a></div>
+                </div>
+                <div class="price__row">
+                  <div class="price__row-info"><span>Одна зона (любая)</span> <span class="price">2000 &#8399;</span></div>
+                  <div class="price__row-button"><a class="button" href="#modal-order" data-toggle="modal"><span class="button__gradient"></span><span class="button__text">Записаться</span></a></div>
+                </div>
+              </div>
+              <div class="price-block__item">
+                <div class="price-block__item-title title title_xs text_uppercase"><img src="img/icons/icon_male.png" alt=""/> Мужская эпиляция</div>
+                <div class="price__row">
+                  <div class="price__row-info"><span>Всё тело</span> <span class="price">4000 &#8399;</span></div>
+                  <div class="price__row-button"><a class="button" href="#modal-order" data-toggle="modal"><span class="button__gradient"></span><span class="button__text">Записаться</span></a></div>
+                </div>
+                <div class="price__row">
+                  <div class="price__row-info"><span>Одна зона (любая)</span> <span class="price">3000 &#8399;</span></div>
+                  <div class="price__row-button"><a class="button" href="#modal-order" data-toggle="modal"><span class="button__gradient"></span><span class="button__text">Записаться</span></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="price-image col" data-aos="fade-left" data-aos-delay="300"><img src="img/content/price-image.jpg" alt=""/></div>
+          </div>
+        </div>
+      </div>
+      <div class="screen section-office">
+        <div class="screen__bg section-office__bg"></div>
+        <div class="screen__overlay section-office__overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="title title_lg text_uppercase text_center col" data-aos="fade-up">УЮТНЫЕ СТУДИИ В МОСКВЕ</div>
+            <div class="office-advantage" data-aos="">
+              <div class="office__item">
+                <div class="office__item-image"><img src="img/content/office__item-image_1.png" alt=""/></div>
+                <div class="office__item-descr">
+                  <div class="descr">Стерильный кабинет и оборудование</div>
+                </div>
+              </div>
+              <div class="office__item">
+                <div class="office__item-image"><img src="img/content/office__item-image_2.png" alt=""/></div>
+                <div class="office__item-descr">
+                  <div class="descr">Дружелюбная теплая атмосфера</div>
+                </div>
+              </div>
+              <div class="office__item">
+                <div class="office__item-image"><img src="img/content/office__item-image_3.png" alt=""/></div>
+                <div class="office__item-descr">
+                  <div class="descr">Кофе, чай и печеньки всем гостям</div>
+                </div>
+              </div>
+            </div>
+            <div class="office-slider" data-aos="fade-up" data-aos-delay="150">
+              <div class="office-slider__item">
+                <div class="office-slider__item-view"><img src="img/content/office-slider_1.jpg" alt=""/></div>
+              </div>
+              <div class="office-slider__item">
+                <div class="office-slider__item-view"><img src="img/content/office-slider_2.jpg" alt=""/></div>
+              </div>
+              <div class="office-slider__item">
+                <div class="office-slider__item-view"><img src="img/content/office-slider_3.jpg" alt=""/></div>
+              </div>
+              <div class="office-slider__item">
+                <div class="office-slider__item-view"><img src="img/content/office-slider_1.jpg" alt=""/></div>
+              </div>
+              <div class="office-slider__item">
+                <div class="office-slider__item-view"><img src="img/content/office-slider_2.jpg" alt=""/></div>
+              </div>
+              <div class="office-slider__item">
+                <div class="office-slider__item-view"><img src="img/content/office-slider_3.jpg" alt=""/></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen section-reviews">
+        <div class="container">
+          <div class="row">
+            <div class="title title_lg text_uppercase text_center col" data-aos="fade-up">ОТЗЫВЫ</div>
+            <div class="content text_center col" data-aos="fade-up" data-aos-delay="150">
+              <p>Поделитесь в инстаграме нашей страницей <b>#ecologyofbody</b></p>
+            </div>
+            <div class="reviews-slider" data-aos="fade-up" data-aos-delay="300">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__item-image"><img src="img/content/reviews-slider.jpg" alt=""/><a class="video-block__play" href="https://www.youtube.com/watch?v=xaEsni-OgUs" data-toggle="video"></a></div>
+                <div class="reviews-slider__item-content">
+                  <div class="reviews-slider__item-title text_uppercase">АЛЕКСАНДРА ЛОГИНОВА</div>
+                  <div class="reviews-slider__item-zone">Ноги полностью | Глубокое бикини</div>
+                  <div class="reviews-slider__item-text">Сегодня пришла в салон "Экология тела" и сделала лазерную эпиляцию волос на ногах. На самом деле это совсем не больно, а еще у них очень доброжелательный коллектив.</div>
+                </div>
+              </div>
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__item-image"><img src="img/content/reviews-slider.jpg" alt=""/><a class="video-block__play" href="https://www.youtube.com/watch?v=xaEsni-OgUs" data-toggle="video"></a></div>
+                <div class="reviews-slider__item-content">
+                  <div class="reviews-slider__item-title text_uppercase">АЛЕКСАНДРА ЛОГИНОВА</div>
+                  <div class="reviews-slider__item-zone">Ноги полностью | Глубокое бикини</div>
+                  <div class="reviews-slider__item-text">Сегодня пришла в салон "Экология тела" и сделала лазерную эпиляцию волос на ногах. На самом деле это совсем не больно, а еще у них очень доброжелательный коллектив.</div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-insta" data-aos="fade-up" data-aos-delay="300">
+              <div class="reviews-insta__item"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B-bVUL5CyOy/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B-bVUL5CyOy/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> Посмотреть эту публикацию в Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B-bVUL5CyOy/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Публикация от Лазерная эпиляция Москва (@eco_telo)</a> <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2020-04-01T05:49:22+00:00">31 Мар 2020 в 10:49 PDT</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script></div>
+              <div class="reviews-insta__item"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B91NSsmogpA/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B91NSsmogpA/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> Посмотреть эту публикацию в Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B91NSsmogpA/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Публикация от Лазерная эпиляция Москва (@eco_telo)</a> <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2020-03-17T10:28:02+00:00">17 Мар 2020 в 3:28 PDT</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script></div>
+              <div class="reviews-insta__item"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B9rc65vIOc0/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B9rc65vIOc0/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> Посмотреть эту публикацию в Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B9rc65vIOc0/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Публикация от Лазерная эпиляция Москва (@eco_telo)</a> <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2020-03-13T15:32:08+00:00">13 Мар 2020 в 8:32 PDT</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script></div>
+              <div class="reviews-insta__item"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B9HqDBKIyN8/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B9HqDBKIyN8/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> Посмотреть эту публикацию в Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B9HqDBKIyN8/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Публикация от Лазерная эпиляция Москва (@eco_telo)</a> <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2020-02-28T17:53:39+00:00">28 Фев 2020 в 9:53 PST</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script></div>
+              <div class="reviews-insta__item"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B9D5ANuowa_/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B9D5ANuowa_/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> Посмотреть эту публикацию в Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B9D5ANuowa_/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Публикация от Лазерная эпиляция Москва (@eco_telo)</a> <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2020-02-27T06:47:25+00:00">26 Фев 2020 в 10:47 PST</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script></div>
+              <div class="reviews-insta__item"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B9DsrJbIyU5/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/B9DsrJbIyU5/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> Посмотреть эту публикацию в Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/B9DsrJbIyU5/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Публикация от Лазерная эпиляция Москва (@eco_telo)</a> <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2020-02-27T05:00:34+00:00">26 Фев 2020 в 9:00 PST</time></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen section-promo">
+        <div class="screen__bg section-promo__bg"></div>
+        <div class="screen__overlay section-promo__overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="promo__content col">
+              <div class="badge" data-aos="zoom-out">Акция</div>
+              <div class="title text_uppercase" data-aos="fade-up" data-aos-delay="150">Эпиляция всего тела</div>
+              <div class="content" data-aos="fade-up" data-aos-delay="300">
+                <p><span class="content_small">7 777 рублей</span> &nbsp;&nbsp;&nbsp; <b class="content_large">3 000 рублей</b></p>
+                <p class="content_note">Предложение действует только <b style="font-weight: 500;">до 3 апреля!</b></p>
+              </div><a class="button" href="#modal-order" data-toggle="modal" data-aos="fade-up" data-aos-delay="450"><span class="button__gradient"></span><span class="button__text">Записаться на эпиляцию</span></a>
+            </div>
+            <div class="promo__image col" data-aos="fade-left" data-aos-delay="300"><img src="img/content/promo.jpg" alt=""/></div>
+          </div>
+        </div>
+      </div>
+      <div class="screen section-contact">
+        <div id="map"></div>
+        <div class="container">
+          <div class="row">
+            <div class="contact" data-aos="zoom-in">
+              <div class="baron baron__root baron__clipper _simple">
+                <div class="baron__scroller">
+                  <div class="contact-wrapper">
+                    <div class="contact__item">
+                      <div class="contact__item-title">1. Салон на Пресненской</div>
+                      <ul class="contact-list">
+                        <li class="contact-list__item contact-list__item_address" data-coordinates="55.747720, 37.538875">Пресненская набережная, башня «Москва», 49 этаж, офис 495М</li>
+                        <li class="contact-list__item contact-list__item_phone"><a href="tel:+7(928)70-77-008">+7(928)70-77-008</a></li>
+                        <li class="contact-list__item contact-list__item_schedule">Без выходных с 8:00 до 22:00</li>
+                      </ul>
+                    </div>
+                    <div class="contact__item">
+                      <div class="contact__item-title">2. Салон на Пресненской</div>
+                      <ul class="contact-list">
+                        <li class="contact-list__item contact-list__item_address" data-coordinates="55.768522, 37.580921">Большая Грузинская ул., 42</li>
+                        <li class="contact-list__item contact-list__item_phone"><a href="tel:+7(928)70-77-008">+7(928)70-77-008</a></li>
+                        <li class="contact-list__item contact-list__item_schedule">Без выходных с 8:00 до 22:00</li>
+                      </ul>
+                    </div>
+                    <div class="contact__item">
+                      <div class="contact__item-title">3. Салон на Пресненской</div>
+                      <ul class="contact-list">
+                        <li class="contact-list__item contact-list__item_address" data-coordinates="55.775459, 37.469844">пр. Маршала Жукова, 41к1</li>
+                        <li class="contact-list__item contact-list__item_phone"><a href="tel:+7(928)70-77-008">+7(928)70-77-008</a></li>
+                        <li class="contact-list__item contact-list__item_schedule">Без выходных с 8:00 до 22:00</li>
+                      </ul>
+                    </div>
+                    <div class="contact__item hidden">
+                      <div class="contact__item-title">4. Салон на Пресненской</div>
+                      <ul class="contact-list">
+                        <li class="contact-list__item contact-list__item_address" data-coordinates="55.706883, 37.592096">ул. Вавилова, 3</li>
+                        <li class="contact-list__item contact-list__item_phone"><a href="tel:+7(928)70-77-008">+7(928)70-77-008</a></li>
+                        <li class="contact-list__item contact-list__item_schedule">Без выходных с 8:00 до 22:00</li>
+                      </ul>
+                    </div>
+                    <div class="contact__item hidden">
+                      <div class="contact__item-title">5. Салон на Пресненской</div>
+                      <ul class="contact-list">
+                        <li class="contact-list__item contact-list__item_address" data-coordinates="55.709008, 37.633877">Даниловская наб., 8Б</li>
+                        <li class="contact-list__item contact-list__item_phone"><a href="tel:+7(928)70-77-008">+7(928)70-77-008</a></li>
+                        <li class="contact-list__item contact-list__item_schedule">Без выходных с 8:00 до 22:00</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="baron__track">
+                  <div class="baron__free">
+                    <div class="baron__bar"></div>
+                  </div>
+                </div>
+              </div>
+              <button class="button button_gradient" type="button"><span class="button__gradient"></span><span class="button__text">Посмотреть все салоны</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer__copy col"><span>&copy; 2020 Экология тела. Все права защищены.</span><a href="#modal-policy" data-toggle="modal">Политика конфиденциальности</a></div>
+          <div class="footer__social col">
+            <div class="social"><a href="#" target="_blank" rel="noopener nofollow"><img src="img/icons/icon_fb.png" alt=""/></a><a href="#" target="_blank" rel="noopener nofollow"><img src="img/icons/icon_vk.png" alt=""/></a><a href="#" target="_blank" rel="noopener nofollow"><img src="img/icons/icon_instagram.png" alt=""/></a><a href="#" target="_blank" rel="noopener nofollow"><img src="img/icons/icon_ok.png" alt=""/></a><a href="#" target="_blank" rel="noopener nofollow"><img src="img/icons/icon_youtube.png" alt=""/></a></div>
+          </div>
+          <div class="footer__contacts col"><span>По вопросам сотрудничества:</span><a href="mailto:hadash@mail.ru">hadash@mail.ru</a></div>
+        </div>
+      </div>
+    </footer>
+    <!-- START #back-top-->
+    <div class="back-top" id="back-top"><a href="#top">
+        <div class="back-top__arrow"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+  <g>
+    <g>
+      <polygon points="128,48.907 0,176.907 30.187,207.093 128,109.28 225.813,207.093 256,176.907"></polygon>
+    </g>
+  </g>
+</svg>
+        </div></a></div>
+    <!-- END #back-top-->
+    <!-- START #modal-->
+    <div class="modal mfp-hide" id="modal">
+      <button class="modal-close" type="button" onClick="closePopup();"><img src="img/close.png" alt=""/></button>
+      <form class="form" id="form_1" method="post">
+        <div class="form-header">
+          <div class="title title_md text_uppercase">заполните заявку</div>
+          <div class="title title_xs">и мы перезвоним Вам</div>
+        </div>
+        <div class="form-body">
+          <div class="form-group">
+            <input class="form-control" type="text" name="name" placeholder="Ваше имя"/>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" name="tel" placeholder="Телефон"/>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control form-control__textarea" name="message" placeholder="Сообщение"></textarea>
+          </div>
+          <button class="button" type="submit"><span class="button__shadow"></span><span class="button__text">Отправить</span></button>
+        </div>
+      </form>
+    </div>
+    <!-- END #modal-->
+    <!-- START #modal-consult-->
+    <div class="modal mfp-hide" id="modal-consult">
+      <button class="modal-close" type="button" onClick="closePopup();"><img src="img/close.png" alt=""/></button>
+      <form class="form" id="form_2" method="post">
+        <div class="form-header">
+          <div class="title title_md text_uppercase">заполните заявку</div>
+          <div class="title title_xs">и получите бесплатную консультацию косметолога</div>
+        </div>
+        <div class="form-body">
+          <div class="form-group">
+            <input class="form-control" type="text" name="name" placeholder="Ваше имя"/>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" name="tel" placeholder="Телефон"/>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control form-control__textarea" name="message" placeholder="Сообщение"></textarea>
+          </div>
+          <button class="button" type="submit"><span class="button__shadow"></span><span class="button__text">Отправить</span></button>
+        </div>
+      </form>
+    </div>
+    <!-- END #modal-consult-->
+    <!-- START #modal-order-->
+    <div class="modal mfp-hide" id="modal-order">
+      <button class="modal-close" type="button" onClick="closePopup();"><img src="img/close.png" alt=""/></button>
+      <form class="form" id="form_3" method="post">
+        <div class="form-header">
+          <div class="title title_md text_uppercase">заполните заявку</div>
+          <div class="title title_xs">и наши специалисты свяжутся с вами, чтобы записать Вас на эпиляцию</div>
+        </div>
+        <div class="form-body">
+          <div class="form-group">
+            <input class="form-control" type="text" name="name" placeholder="Ваше имя"/>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" name="tel" placeholder="Телефон"/>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control form-control__textarea" name="message" placeholder="Сообщение"></textarea>
+          </div>
+          <button class="button" type="submit"><span class="button__shadow"></span><span class="button__text">Отправить</span></button>
+        </div>
+      </form>
+    </div>
+    <!-- END #modal-order-->
+    <!-- START #modal-->
+    <div class="modal mfp-hide" id="modal-policy">
+      <button class="modal-close" type="button" onClick="closePopup();"><img src="img/close.png" alt=""/></button>
+      <div class="modal-header">
+        <div class="title title_sm _f-black">Политика конфиденциальности</div>
+      </div>
+      <div class="content">
+        <p>Данная политика конфиденциальности относится к сайту с доменным именем <strong>http://site.name/</strong> и его поддоменам. Страница содержит сведения о том, какую информацию администрация сайта или третьи лица могут получать, когда пользователь (вы) посещаете его.</p>
+        <p><strong>Данные, которые собираются при посещении</strong></p>
+        <p><strong>Персональные данные</strong></p>
+        <p>Персональные данные при посещении сайта передаются пользователем добровольно, к ним могут относиться: имя, фамилия, отчество, номера телефонов, адреса электронной почты, адреса для доставки товаров или оказания услуг, реквизиты компании, которую представляет пользователь, должность в компании, которую представляет пользователь, аккаунты в социальных сетях, а также — прочие, заполняемые поля форм.</p>
+        <p>Эти данные собираются в целях оказания услуг или продажи товаров, возможности связи с пользователем или иной активности пользователя на сайте, а также, чтобы отправлять пользователю информацию, которую он согласился получать.</p>
+        <p>Мы не проверяем достоверность оставляемых данных и не гарантируем качественного исполнения заказов, оказания услуг или обратной связи с нами при предоставлении некорректных сведений.</p>
+        <p>Данные собираются имеющимися на сайте формами для заполнения (например, регистрации, оформления заказа, подписки, оставления отзыва, вопроса, обратной связи и иными).</p>
+        <p>Формы, установленные на сайте, могут передавать данные как напрямую на сайт, так и на сайты сторонних организаций (скрипты сервисов сторонних организаций).</p>
+        <p>Данные могут собираться через технологию cookies (куки) как непосредственно сайтом, так и скриптами сервисов сторонних организаций. Эти данные собираются автоматически, отправку этих данных можно запретить, отключив cookies (куки) в браузере, в котором открывается сайт.</p>
+        <p><strong>Не персональные данные</strong></p>
+        <p>Кроме персональных данных при посещении сайта собираются не персональные данные, их сбор происходит автоматически веб-сервером, на котором расположен сайт, средствами CMS (системы управления сайтом), скриптами сторонних организаций, установленными на сайте. К данным, собираемым автоматически, относятся: IP адрес и страна его регистрации, имя домена, с которого вы к нам пришли, переходы посетителей с одной страницы сайта на другую, информация, которую ваш браузер предоставляет добровольно при посещении сайта, cookies (куки), фиксируются посещения, иные данные, собираемые счетчиками аналитики сторонних организаций, установленными на сайте.</p>
+        <p>Эти данные носят неперсонифицированный характер и направлены на улучшение обслуживания клиентов, улучшения удобства использования сайта, анализа статистики посещаемости.</p>
+        <p><strong>Предоставление данных третьим лицам</strong></p>
+        <p>Мы не раскрываем личную информацию пользователей компаниям, организациям и частным лицам, не связанным с нами. Исключение составляют случаи, перечисленные ниже.</p>
+        <p><strong><em>Данные пользователей в общем доступе</em></strong></p>
+        <p>Персональные данные пользователя могут публиковаться в общем доступе в соответствии с функционалом сайта, например, при оставлении отзывов / вопросов, может публиковаться указанное пользователем имя, такая активность на сайте является добровольной, и пользователь своими действиями дает согласие на такую публикацию.</p>
+        <p><strong><em>По требованию закона</em></strong></p>
+        <p>Информация может быть раскрыта в целях воспрепятствования мошенничеству или иным противоправным действиям; по требованию законодательства и в иных случаях, предусмотренных законами РФ.</p>
+        <p><strong><em>Для оказания услуг, выполнения обязательств</em></strong></p>
+        <p>Пользователь соглашается с тем, что персональная информация может быть передана третьим лицам в целях оказания заказанных на сайте услуг, выполнении иных обязательств перед пользователем. К таким лицам, например, относятся курьерская служба, почтовые службы, службы грузоперевозок и иные.</p>
+        <p><strong><em>Сервисам сторонних организаций, установленным на сайте</em></strong></p>
+        <p>На сайте могут быть установлены формы, собирающие персональную информацию других организаций, в этом случае сбор, хранение и защита персональной информации пользователя осуществляется сторонними организациями в соответствии с их политикой конфиденциальности.</p>
+        <p>Сбор, хранение и защита полученной от сторонней организации информации осуществляется в соответствии с настоящей политикой конфиденциальности.</p>
+        <p><strong>Как мы защищаем вашу информацию</strong></p>
+        <p>Мы принимаем соответствующие меры безопасности по сбору, хранению и обработке собранных данных для защиты их от несанкционированного доступа, изменения, раскрытия или уничтожения, ограничиваем нашим сотрудникам, подрядчикам и агентам доступ к персональным данным, постоянно совершенствуем способы сбора, хранения и обработки данных, включая физические меры безопасности, для противодействия несанкционированному доступу к нашим системам.</p>
+        <p><strong>Ваше согласие с этими условиями</strong></p>
+        <p>Используя сайт, вы выражаете свое согласие с этой политикой конфиденциальности. Если вы не согласны с этой политикой, пожалуйста, не используйте его. Ваше дальнейшее использование сайта после внесения изменений в настоящую политику будет рассматриваться как ваше согласие с этими изменениями.</p>
+        <p><strong>Отказ от ответственности</strong></p>
+        <p>Политика конфиденциальности не распространяется ни на какие другие сайты и не применима к веб-сайтам третьих лиц, которые могут содержать упоминание о нашем сайте и с которых могут делаться ссылки на сайт, а также ссылки с этого сайта на другие сайты сети интернет. Мы не несем ответственности за действия других веб-сайтов.</p>
+        <p><strong>Изменения в политике конфиденциальности</strong></p>
+        <p>Мы имеем право по своему усмотрению обновлять данную политику конфиденциальности в любое время. Мы рекомендуем пользователям регулярно проверять эту страницу ( <strong>http://site.name/privacy</strong>) для того, чтобы быть в курсе любых изменений о том, как мы защищаем информацию о пользователях, которую мы собираем. Используя сайт, вы соглашаетесь с принятием на себя ответственности за периодическое ознакомление с политикой конфиденциальности и изменениями в ней.</p>
+      </div>
+    </div>
+    <!-- END #modal--><script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;coordorder=latlong"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script><script src="js/ya-map.js"></script>
+  </body>
+</html>
